@@ -1,0 +1,30 @@
+package main
+
+import (
+	"fmt"
+	"os"
+)
+
+func main() {
+	// input, err := GetInput("> ")
+
+	// if err != nil {
+	// 	fmt.Println("Error")
+	// }
+
+	// fmt.Println(input)
+
+	// save(input)
+	const filepath = "saved/file.txt"
+
+	fmt.Println(os.Getenv("dir"))
+
+	stream := ReadFile("main.go")
+	WriteFile(stream, filepath)
+
+	// for i := 0; i < 1000; i++ {
+	// 	AppendFile("Hello"+fmt.Sprint(i)+"\n", filepath)
+	// }
+
+	// fmt.Println(ReadFile("saved/file.txt"))
+}
